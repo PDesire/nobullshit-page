@@ -1,4 +1,5 @@
 import { Component } from "../../component";
+import { KnowledgeComponent } from "../KnowledgeComponent/KnowledgeComponent";
 import template from "./ContentComponent.html"
 
 export class ContentComponent extends Component {
@@ -12,5 +13,11 @@ export class ContentComponent extends Component {
     html.innerHTML = template;
 
     return html;
+  }
+
+  public renderAfter(): Component[] {
+    return [
+      new KnowledgeComponent()
+    ]
   }
 }

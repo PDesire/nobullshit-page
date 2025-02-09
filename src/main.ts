@@ -1,5 +1,4 @@
 import { MainComponent } from './components/MainComponent/MainComponent';
-import './fonts.css'
 import './style.css'
 
 async function setup() {
